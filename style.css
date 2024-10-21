@@ -1,0 +1,65 @@
+body{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 13vh 10vh 62vh 10vh;
+    gap: 2px;
+    grid-template-areas:    
+    "a b"
+    "c d"
+    "c e"
+    "c f";
+}
+
+divheader{
+    grid-area: a;
+    border: 5px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+header{
+    grid-area: b;
+    background-color: rgb(252, 193, 82);
+    text-align: center;
+    border-radius: 5px;
+}
+linkheader{
+    grid-area: d;
+    background-color:rgb(252, 193, 82);
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 5px;
+}
+
+divmain{
+    grid-area: c;
+    border: 5px solid black;
+    border-radius: 5px;
+    background-image: url(img/Skärmbild\ 2024-10-21\ 135424.png);
+    border-radius: 5px;
+
+}
+main{
+    grid-area: e;
+    background-color:rgb(252, 193, 82);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+main img {
+    /* width: 300px;
+    height: 150px; */
+    width: 70%;
+    height: 70%;
+}
+
+footer{
+    text-align: center;
+    padding: 2px;
+    grid-area: f;
+    background-color: sandybrown;
+    border-radius: 5px;
+}
